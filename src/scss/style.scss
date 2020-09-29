@@ -2,12 +2,6 @@ body {
   background-color: black;
 }
 
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 // Loader 1
 .circle-shaped-container div {
   border-radius:50%;
@@ -140,24 +134,90 @@ body {
   }
 }
 
-// Loader 2
-@keyframes colored-box {
-  from {top: 0px;}
-  to {top: 350px;}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
 }
 
-.boxed-loader {
+// Loader 2
+//@keyframes colored-box {
+//  0% {left: 0;}
+//  25% {left: 25px;}
+//  50% {left: -25px;}
+//  75% {right: 25px;}
+//  100% {right: -25px}
+//}
 
-  .box {
-    display: inline-flex;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    animation: colored-box 4s infinite;
-    background-color: #9c37a6;
-  }
+@keyframes circle-color-1 {
+  0% {background: #216aa1}
+  25% {background: #8a2ad0}
+  50% {background: #dd3ba6}
+  75% {background: #de3241}
+  100% {background: #dec136}
+}
 
-  .box-1 {
+@keyframes circle-color-2 {
+  0% {background: #dec136}
+  25% {background: #216aa1}
+  50% {background: #8a2ad0}
+  75% {background: #dd3ba6}
+  100% {background: #de3241}
+}
 
-  }
+@keyframes circle-color-3 {
+  0% {background: #de3241}
+  25% {background: #dec136}
+  50% {background: #216aa1}
+  75% {background: #8a2ad0}
+  100% {background: #dd3ba6}
+}
+
+@keyframes circle-color-4 {
+  0% {background: #dd3ba6}
+  25% {background: #de3241}
+  50% {background: #dec136}
+  75% {background: #216aa1}
+  100% {background: #8a2ad0}
+}
+
+@keyframes circle-color-5 {
+  0% {background: #8a2ad0}
+  25% {background: #dd3ba6}
+  50% {background: #de3241}
+  75% {background: #dec136}
+  100% {background: #216aa1}
+}
+
+.linear-loader {
+  display: inline-flex;
+  position: relative;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation-delay: calc((var(--index) - 5) * 0.25s);
+}
+
+.circle-1 {
+  animation: circle-color-1 2s infinite;
+}
+
+.circle-2 {
+  animation: circle-color-2 2s infinite;
+}
+
+.circle-3 {
+  animation: circle-color-3 2s infinite;
+}
+
+.circle-4 {
+  animation: circle-color-4 2s infinite;
+}
+
+.circle-5 {
+  animation: circle-color-5 2s infinite;
 }
