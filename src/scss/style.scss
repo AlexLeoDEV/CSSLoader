@@ -2,135 +2,17 @@ body {
   background-color: black;
 }
 
-// Loader 1
-.circle-shaped-container div {
-  border-radius:50%;
-  height:2px; width:2px; /* To allow border-radius to work */
-  position:absolute;
-  top:50%; left:50%;
-  margin-top:-1px; margin-left:-1px;
-  box-shadow:
-          -30px -50px 0 15px #6cce74,
-          30px -50px 0 15px #c18d46,
-          60px    0px 0 15px #c14745,
-          30px  50px 0 15px #2e1e5b,
-          -30px  50px 0 15px #9c37a6,
-          -60px    0px 0 15px #76bdd1;
-  animation:rotate 12s infinite linear;
-}
+header {
+  font-size: 2rem;
 
-@keyframes rotate {
-  16.67% {
-    box-shadow:
-            -30px -50px 0 15px #76bdd1,
-            30px -50px 0 15px #6cce74,
-            60px    0px 0 15px #c18d46,
-            30px  50px 0 15px #c14745,
-            -30px  50px 0 15px #2e1e5b,
-            -60px    0px 0 15px #9c37a6;
+  a {
+    text-decoration: none;
+    color: #d02192;
   }
-  33.33%   {
-    box-shadow:
-            -30px -50px 0 15px #9c37a6,
-            30px -50px 0 15px #76bdd1,
-            60px    0px 0 15px #6cce74,
-            30px  50px 0 15px #c18d46,
-            -30px  50px 0 15px #c14745,
-            -60px    0px 0 15px #2e1e5b;
-  }
-  50%      {
-    box-shadow:
-            -30px -50px 0 15px #2e1e5b,
-            30px -50px 0 15px #9c37a6,
-            60px    0px 0 15px #76bdd1,
-            30px  50px 0 15px #6cce74,
-            -30px  50px 0 15px #c18d46,
-            -60px    0px 0 15px #c14745;
-  }
-  66.67%   {
-    box-shadow:
-            -30px -50px 0 15px #c14745,
-            30px -50px 0 15px #2e1e5b,
-            60px    0px 0 15px #9c37a6,
-            30px  50px 0 15px #76bdd1,
-            -30px  50px 0 15px #6cce74,
-            -60px    0px 0 15px #c18d46;
-  }
-  88.88%   {
-    box-shadow:
-            -30px -50px 0 15px #c18d46,
-            30px -50px 0 15px #c14745,
-            60px    0px 0 15px #2e1e5b,
-            30px  50px 0 15px #9c37a6,
-            -30px  50px 0 15px #76bdd1,
-            -60px    0px 0 15px #6cce74;
-  }
-  100% {
-    transform:rotate(-360deg);
-    box-shadow:
-            -30px -50px 0 15px #6cce74,
-            30px -50px 0 15px #c18d46,
-            60px    0px 0 15px #c14745,
-            30px  50px 0 15px #2e1e5b,
-            -30px  50px 0 15px #9c37a6,
-            -60px    0px 0 15px #76bdd1;
-  }
-}
-@-webkit-keyframes rotate {
-  16.67% {
-    box-shadow:
-            -30px -50px 0 15px #76bdd1,
-            30px -50px 0 15px #6cce74,
-            60px    0px 0 15px #c18d46,
-            30px  50px 0 15px #c14745,
-            -30px  50px 0 15px #2e1e5b,
-            -60px    0px 0 15px #9c37a6;
-  }
-  33.33%   {
-    box-shadow:
-            -30px -50px 0 15px #9c37a6,
-            30px -50px 0 15px #76bdd1,
-            60px    0px 0 15px #6cce74,
-            30px  50px 0 15px #c18d46,
-            -30px  50px 0 15px #c14745,
-            -60px    0px 0 15px #2e1e5b;
-  }
-  50%      {
-    box-shadow:
-            -30px -50px 0 15px #2e1e5b,
-            30px -50px 0 15px #9c37a6,
-            60px    0px 0 15px #76bdd1,
-            30px  50px 0 15px #6cce74,
-            -30px  50px 0 15px #c18d46,
-            -60px    0px 0 15px #c14745;
-  }
-  66.67%   {
-    box-shadow:
-            -30px -50px 0 15px #c14745,
-            30px -50px 0 15px #2e1e5b,
-            60px    0px 0 15px #9c37a6,
-            30px  50px 0 15px #76bdd1,
-            -30px  50px 0 15px #6cce74,
-            -60px    0px 0 15px #c18d46;
-  }
-  88.88%   {
-    box-shadow:
-            -30px -50px 0 15px #c18d46,
-            30px -50px 0 15px #c14745,
-            60px    0px 0 15px #2e1e5b,
-            30px  50px 0 15px #9c37a6,
-            -30px  50px 0 15px #76bdd1,
-            -60px    0px 0 15px #6cce74;
-  }
-  100% {
-    -webkit-transform:rotate(-360deg);
-    box-shadow:
-            -30px -50px 0 15px #6cce74,
-            30px -50px 0 15px #c18d46,
-            60px    0px 0 15px #c14745,
-            30px  50px 0 15px #2e1e5b,
-            -30px  50px 0 15px #9c37a6,
-            -60px    0px 0 15px #76bdd1;
+
+  a:hover {
+    text-decoration: none;
+    color: #2721d0;
   }
 }
 
@@ -141,15 +23,7 @@ body {
   height: 600px;
 }
 
-// Loader 2
-//@keyframes colored-box {
-//  0% {left: 0;}
-//  25% {left: 25px;}
-//  50% {left: -25px;}
-//  75% {right: 25px;}
-//  100% {right: -25px}
-//}
-
+// Linear loader
 @keyframes circle-color-1 {
   0% {background: #216aa1}
   25% {background: #8a2ad0}
@@ -221,3 +95,88 @@ body {
 .circle-5 {
   animation: circle-color-5 2s infinite;
 }
+
+// Box Loader
+@keyframes box-1 {
+  0% {right: 0; bottom: 0; background: #ff5900;}
+  25% {right: 50px; bottom: 0; background: #fffb00;}
+  50% {right: 0; bottom: 0; background: #11ff00;}
+  75% {right: 0; bottom: 50px; background: #001aff;}
+  100% {right: 0; bottom: 0; background: #a600ff;}
+}
+
+@keyframes box-2 {
+  0% {left: 0; top: 0; background: #a600ff;}
+  25% {left: 50px; top: 0; background: #ff5900;}
+  50% {left: 0; top: 0; background: #fffb00;}
+  75% {left: 0; top: 50px; background: #11ff00;}
+  100% {left: 0; top: 0; background: #001aff;}
+}
+
+.box-loader {
+  display: inline-flex;
+  position: relative;
+
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .box-1 {
+    position: relative;
+    animation: box-1 4s infinite;
+  }
+
+  .box-2 {
+    position: relative;
+    animation-direction:alternate;
+    animation: box-2 4s infinite;
+  }
+}
+
+// Circle loader
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle-loader {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 8px solid;
+    border-radius: 50%;
+    animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #2cc7d6 transparent transparent transparent;
+  }
+
+  .item-1 {
+    animation-delay: -0.45s;
+  }
+
+  .item-2 {
+    animation-delay: -0.3s;
+  }
+
+  .item-3 {
+    animation-delay: -0.15s;
+  }
+
+  .item-4 {
+    animation-delay: 0s;
+  }
+}
+
+
