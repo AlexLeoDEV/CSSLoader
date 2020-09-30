@@ -64,11 +64,6 @@ header {
   100% {background: #216aa1}
 }
 
-.linear-loader {
-  display: inline-flex;
-  position: relative;
-}
-
 .circle {
   width: 50px;
   height: 50px;
@@ -113,25 +108,20 @@ header {
   100% {left: 0; top: 0; background: #001aff;}
 }
 
-.box-loader {
-  display: inline-flex;
+.box {
+  width: 50px;
+  height: 50px;
+}
+
+.box-1 {
   position: relative;
+  animation: box-1 4s infinite;
+}
 
-  .box {
-    width: 50px;
-    height: 50px;
-  }
-
-  .box-1 {
-    position: relative;
-    animation: box-1 4s infinite;
-  }
-
-  .box-2 {
-    position: relative;
-    animation-direction:alternate;
-    animation: box-2 4s infinite;
-  }
+.box-2 {
+  position: relative;
+  animation-direction:alternate;
+  animation: box-2 4s infinite;
 }
 
 // Circle loader
@@ -144,39 +134,24 @@ header {
   }
 }
 
-.circle-loader {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-
-  div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border: 8px solid;
-    border-radius: 50%;
-    animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #2cc7d6 transparent transparent transparent;
-  }
-
-  .item-1 {
-    animation-delay: -0.45s;
-  }
-
-  .item-2 {
-    animation-delay: -0.3s;
-  }
-
-  .item-3 {
-    animation-delay: -0.15s;
-  }
-
-  .item-4 {
-    animation-delay: 0s;
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
 }
 
+.grid-container > div {
+  grid-column: 2;
+  width: 120px;
+  height: 120px;
+  border: 8px solid;
+  border-radius: 50%;
+  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ac2cd6 transparent transparent transparent;
+}
 
+.qube {
+  animation-delay: -0.45s;
+}
