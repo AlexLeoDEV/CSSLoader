@@ -20,54 +20,130 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 100vh;
 }
 
 // Linear loader
 @keyframes circle-color-1 {
-  0% {background: #216aa1}
-  25% {background: #8a2ad0}
-  50% {background: #dd3ba6}
-  75% {background: #de3241}
-  100% {background: #dec136}
+  0% {
+    background: #216aa1;
+    top: -20px;
+  }
+  25% {
+    background: #8a2ad0;
+    top: 0;
+  }
+  50% {
+    background: #dd3ba6;
+    top: 0;
+  }
+  75% {
+    background: #de3241;
+    top: 0;
+  }
+  100% {
+    background: #dec136;
+    top: 0;
+  }
 }
 
 @keyframes circle-color-2 {
-  0% {background: #dec136}
-  25% {background: #216aa1}
-  50% {background: #8a2ad0}
-  75% {background: #dd3ba6}
-  100% {background: #de3241}
+  0% {
+    background: #dec136;
+    top: 0;
+  }
+  25% {
+    background: #216aa1;
+    top: -20px;
+  }
+  50% {
+    background: #8a2ad0;
+    top: 0;
+  }
+  75% {
+    background: #dd3ba6;
+    top: 0;
+  }
+  100% {
+    background: #de3241;
+    top: 0;
+  }
 }
 
 @keyframes circle-color-3 {
-  0% {background: #de3241}
-  25% {background: #dec136}
-  50% {background: #216aa1}
-  75% {background: #8a2ad0}
-  100% {background: #dd3ba6}
+  0% {
+    background: #de3241;
+    top: 0;
+  }
+  25% {
+    background: #dec136;
+    top: 0;
+  }
+  50% {
+    background: #216aa1;
+    top: -20px;
+  }
+  75% {
+    background: #8a2ad0;
+    top: 0;
+  }
+  100% {
+    background: #dd3ba6;
+    top: 0;
+  }
 }
 
 @keyframes circle-color-4 {
-  0% {background: #dd3ba6}
-  25% {background: #de3241}
-  50% {background: #dec136}
-  75% {background: #216aa1}
-  100% {background: #8a2ad0}
+  0% {
+    background: #dd3ba6;
+    top: 0;
+  }
+  25% {
+    background: #de3241;
+    top: 0;
+  }
+  50% {
+    background: #dec136;
+    top: 0;
+  }
+  75% {
+    background: #216aa1;
+    top: -20px;
+  }
+  100% {
+    background: #8a2ad0;
+    top: 0;
+  }
 }
 
 @keyframes circle-color-5 {
-  0% {background: #8a2ad0}
-  25% {background: #dd3ba6}
-  50% {background: #de3241}
-  75% {background: #dec136}
-  100% {background: #216aa1}
+  0% {
+    background: #8a2ad0;
+    top: 0;
+  }
+  25% {
+    background: #dd3ba6;
+    top: 0;
+  }
+  50% {
+    background: #de3241;
+    top: 0;
+  }
+  75% {
+    background: #dec136;
+    top: 0;
+  }
+  100% {
+    background: #216aa1;
+    top: -20px;
+  }
 }
 
 .circle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  position: relative;
 }
 
 .circle-1 {
@@ -148,5 +224,5 @@ header {
   border: 8px solid;
   border-radius: 50%;
   animation: spinner 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #b93ae2 transparent transparent transparent;
+  border-color: #b93ae2 transparent #3ae242 transparent;
 }
