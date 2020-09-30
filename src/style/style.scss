@@ -2,6 +2,12 @@ body {
   background-color: black;
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 header {
   font-size: 2rem;
 
@@ -24,9 +30,9 @@ header {
 }
 
 // Linear loader
-@keyframes circle-color-1 {
+@keyframes circle-1 {
   0% {
-    background: #216aa1;
+    background: #dec136;
     top: -20px;
   }
   25% {
@@ -42,18 +48,18 @@ header {
     top: 0;
   }
   100% {
-    background: #dec136;
+    background: #36de3e;
     top: 0;
   }
 }
 
-@keyframes circle-color-2 {
+@keyframes circle-2 {
   0% {
-    background: #dec136;
+    background: #36de3e;
     top: 0;
   }
   25% {
-    background: #216aa1;
+    background: #dec136;
     top: -20px;
   }
   50% {
@@ -70,17 +76,17 @@ header {
   }
 }
 
-@keyframes circle-color-3 {
+@keyframes circle-3 {
   0% {
     background: #de3241;
     top: 0;
   }
   25% {
-    background: #dec136;
+    background: #36de3e;
     top: 0;
   }
   50% {
-    background: #216aa1;
+    background: #dec136;
     top: -20px;
   }
   75% {
@@ -93,7 +99,7 @@ header {
   }
 }
 
-@keyframes circle-color-4 {
+@keyframes circle-4 {
   0% {
     background: #dd3ba6;
     top: 0;
@@ -103,11 +109,11 @@ header {
     top: 0;
   }
   50% {
-    background: #dec136;
+    background: #36de3e;
     top: 0;
   }
   75% {
-    background: #216aa1;
+    background: #dec136;
     top: -20px;
   }
   100% {
@@ -116,7 +122,7 @@ header {
   }
 }
 
-@keyframes circle-color-5 {
+@keyframes circle-5 {
   0% {
     background: #8a2ad0;
     top: 0;
@@ -130,11 +136,11 @@ header {
     top: 0;
   }
   75% {
-    background: #dec136;
+    background: #36de3e;
     top: 0;
   }
   100% {
-    background: #216aa1;
+    background: #dec136;
     top: -20px;
   }
 }
@@ -144,59 +150,62 @@ header {
   height: 25px;
   border-radius: 50%;
   position: relative;
+  animation-direction: alternate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .circle-1 {
-  animation: circle-color-1 2s infinite;
+  animation-name: circle-1;
 }
 
 .circle-2 {
-  animation: circle-color-2 2s infinite;
+  animation-name: circle-2;
 }
 
 .circle-3 {
-  animation: circle-color-3 2s infinite;
+  animation-name: circle-3;
 }
 
 .circle-4 {
-  animation: circle-color-4 2s infinite;
+  animation-name: circle-4;
 }
 
 .circle-5 {
-  animation: circle-color-5 2s infinite;
+  animation-name: circle-5;
 }
 
 // Box Loader
 @keyframes box-1 {
   0% {right: 0; bottom: 0; background: #ff5900;}
-  25% {right: 50px; bottom: 0; background: #fffb00;}
+  25% {right: 25px; bottom: 0; background: #fffb00;}
   50% {right: 0; bottom: 0; background: #11ff00;}
-  75% {right: 0; bottom: 50px; background: #001aff;}
+  75% {right: 0; bottom: 25px; background: #001aff;}
   100% {right: 0; bottom: 0; background: #a600ff;}
 }
 
 @keyframes box-2 {
   0% {left: 0; top: 0; background: #a600ff;}
-  25% {left: 50px; top: 0; background: #ff5900;}
+  25% {left: 25px; top: 0; background: #ff5900;}
   50% {left: 0; top: 0; background: #fffb00;}
-  75% {left: 0; top: 50px; background: #11ff00;}
+  75% {left: 0; top: 25px; background: #11ff00;}
   100% {left: 0; top: 0; background: #001aff;}
 }
 
 .box {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
 }
 
 .box-1 {
   position: relative;
-  animation: box-1 4s infinite;
+  animation: box-1 2s infinite;
 }
 
 .box-2 {
   position: relative;
-  animation-direction:alternate;
-  animation: box-2 4s infinite;
+  animation-direction: alternate;
+  animation: box-2 2s infinite;
 }
 
 // Circle loader
@@ -224,5 +233,5 @@ header {
   border: 8px solid;
   border-radius: 50%;
   animation: spinner 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #b93ae2 transparent #3ae242 transparent;
+  border-color: #8d17f8 transparent #3ae242 transparent;
 }
