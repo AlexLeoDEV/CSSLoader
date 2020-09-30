@@ -142,16 +142,12 @@ header {
   align-items: center;
 }
 
-.grid-container > div {
+.qube {
   grid-column: 2;
   width: 120px;
   height: 120px;
   border: 8px solid;
   border-radius: 50%;
-  animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #ac2cd6 transparent transparent transparent;
-}
-
-.qube {
-  animation-delay: -0.45s;
+  animation: spinner 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #b93ae2 transparent transparent transparent;
 }
